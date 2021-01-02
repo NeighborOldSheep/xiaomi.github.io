@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-width: 1226px;
+}
+a{
+    text-decoration: none;
+}
+/*头部广告*/
+.topbanner{
+    width: 100%;
+    height: 200px;
+    background: url("topbanner.jpg") no-repeat center;
+    cursor: pointer
+}
+/*头部菜单*/
+/*菜单ul设置*/
+.nav{
+    height: 40px;
+    line-height: 40px;
+}
+.nav > ul{
+    overflow: hidden;
+    position: relative;
+    list-style: none;
+    background-color: #4d4d4d;
+}
+
+/*菜单a标签样式*/
+.nav > ul > li > a{
+    padding: 5px;
+    font-size: 13px;
+    color: #b0b0b0;
+    display: block;
+}
+/*菜单li标签样式*/
+.nav > ul > li{
+    float: left;
+}
+/*右侧登陆ul设置*/
+.nav .login > ul{
+    list-style: none;
+}
+/*右侧登陆li设置*/
+.login > ul > li{
+    float: right;
+}
+/*右侧a标签*/
+.login > ul > li > a{
+    padding: 5px;
+    font-size: 13px;
+    color: #b0b0b0;
+    display: block;
+}
+/*当鼠标悬置导航栏a标签*/
+.nav a:hover{
+    color: white;
+}
+
+
+/*导航栏*/
+.mainnav{
+    margin: 30px;
+    position: relative;
+    display: inline-block;
+}
+/*去掉li的装饰点*/
+.mainnav ul{
+    list-style: none;
+}
+/*一级菜单ul跟li的设置*/
+.mainnav ul, .mainnav li{
+    float: left;
+}
+/*一级菜单a标签设置*/
+.mainnav > ul > li > a{
+    display: block;
+    color: black;
+    margin: 10px;
+    padding: 5px;
+}
+/*对二级菜单绝对定位，并隐藏*/
+.mainnav > ul > li > ul{
+    display: none;
+    position: absolute;
+}
+/*二级菜单a标签设置*/
+.mainnav > ul > li > ul > li > a {
+    display: block;
+    color: black;
+    margin: 5px;
+    padding: 5px;
+}
+/*当鼠标悬置在一级菜单显示二级菜单*/
+.mainnav > ul >li:hover > ul{
+    display: block;
+}
+/*当鼠标悬置在一级菜单a链接变色*/
+.mainnav > ul > li > a:hover{
+    color: orange
+}
+/*搜索框*/
+.mainnav > .searchbox{
+    margin: 10px;
+    padding: 5px;
+}
+.mainnav > .button{
+    margin-left: 100px;
+}
+/*轮播栏*/
+.banner{
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    width: 1226px;
+    height: 560px;
+
+}
+.banner img{
+    width: 1080px;
+    height: 560px;
+}
+/*菜单*/
+.menue{
+    width: 234px;
+    height: 460px;
+    float: left;
+    position: absolute;
+}
+/*对菜单ul进行设置*/
+.menue > ul{
+    left: 115px;
+    bottom: 557px;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    box-sizing: border-box;
+    background-color: rgba(105,101,101,.6);
+}
+.menue > ul > li{
+    position: relative;
+}
+/*对一级菜单a标签进行设置*/
+.menue > ul > li >a{
+    display: block;
+    color: white;
+    padding: 5px;
+    margin: 18px;
+}
+/*对二级菜单进行隐藏*/
+.menue > ul > li > ul{
+    display: none;
+}
+.menue > ul > li:hover > ul{
+    display: block;
+}
+.menue > ul > li > a:hover{
+    color: orange;
+}
